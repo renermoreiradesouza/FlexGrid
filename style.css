@@ -1,0 +1,63 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Container geral */
+    .container {
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh;
+       font-family: Arial, sans-serif;
+    }
+    
+    /* barra de navegção */
+    .header {
+        background-color: blue;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    /* Área principal */
+    .main-content {
+        display: flex;
+        flex: 1;
+    }
+    
+    /* Menu lateral */
+    .sidebar {
+        background-color: #34495e;
+        color: #fff;
+        flex: 1;
+        padding: 20px;
+        min-width: 200px;
+    }
+    
+    /* Conteúdo principal */
+    .content {
+    background-color: #ecf;
+    flex: 3;
+    padding: 20px;
+    }
+    
+    /* Rodapé */
+    .footer {
+        background-color: darkslateblue;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    /* Responsividade simples */
+    @media (max-width: 768px) {
+    .main-content{
+        flex-direction: column;
+    }
+    
+    .sidebar{
+        min-width: auto;
+    }
+    }
